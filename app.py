@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template
 from model import SentimentRecommender
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='template')
 
 sent_reco_model = SentimentRecommender()
 
